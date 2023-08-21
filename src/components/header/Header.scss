@@ -1,0 +1,136 @@
+@use "../../Styles/Partials/mixins" as *;
+@use "../../Styles/Partials/fonts" as *;
+@use "../../Styles/Partials/colors" as *;
+
+
+h1 {
+    font-size: 1.6rem;
+    letter-spacing: .167rem;
+    background-color: $jp-red;
+    color: #fff;
+
+}
+
+h3 {
+    font-size: 1rem;
+    letter-spacing: .23rem;
+    background-color: $jp-red;
+    color: #fff;
+
+}
+
+
+
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 5rem;
+    padding: 0 1rem;
+    background-color: $jp-red;
+    position: relative;
+    width: 100%;
+    z-index: 1000;
+
+    @include tablet {
+        height: 7rem;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.hamburger {
+    background-image: url("../../icons/hamburger.png");
+    width: 2rem;
+    height: 2rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+    position: relative;  
+    background-color: $jp-red;
+    cursor: pointer;
+
+
+
+    @include tablet {
+        display: none;
+    }
+    
+}
+
+.logo {
+
+    @include tablet {
+        margin-left: 4rem;
+    }
+
+    @include desktop {
+        margin-left: 8rem;
+    }
+}
+
+.link {
+    text-decoration: none;
+    color: $jp-red;
+    background-color: $jp-tan;
+
+    @include tablet {
+        color: $jp-tan;
+        background-color: $jp-red;
+    }
+
+}
+
+
+.list {
+    font-size: 1.5rem;
+    padding: 2rem 1rem;
+    line-height: 2;
+    position: absolute;
+    width: 100%;
+    background-color: $jp-tan;
+    margin: 21rem 0 0 -1rem;
+    display: none;
+    flex-direction: column;
+    z-index: 7;
+
+
+    @include tablet {
+        background-color: $jp-red;
+        width: 60%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        position: relative;
+        margin: 5rem;
+
+      
+    } 
+    
+
+   
+
+  
+
+}
+
+.list.open {
+    display: block;
+}
+
+.list__item {
+    display: flex;
+    flex-direction: column;
+
+   @include tablet {
+        display: flex;
+        align-items: center;
+        margin-left: 1rem;
+      
+   }
+
+
+}
+

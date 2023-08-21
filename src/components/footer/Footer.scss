@@ -1,0 +1,112 @@
+@use "../../Styles/Partials/mixins" as *;
+@use "../../Styles/Partials/fonts" as *;
+@use "../../Styles/Partials/colors" as *;
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $jp-tan;
+
+  @include tablet {
+    display: flex;
+    flex-direction: row;    
+  }
+
+  &__heading {
+    background-color: $jp-tan;
+    text-align: left;
+    margin: 1rem 0 0 1rem;
+    color: #000;
+  }
+
+  &__aside {
+    height: 100%;
+    width: 80%;
+    background-color: $jp-tan;
+    margin-left: 10%;
+
+    @include tablet {
+      width: 50%;
+    }
+  }
+
+  &__right {
+      height: 10rem;
+      background-color: $jp-tan;
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+  }
+
+
+&__fb,
+&__insta {
+    background-image: url(../../icons/facebook.png);
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+    background-size: cover;
+    background-color: $jp-tan;
+    margin: 2rem;
+}
+
+&__insta {
+    background-image: url(../../icons/instagram.png);
+  
+}
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+  background-color: $jp-tan;
+  padding: 1rem;
+
+  &__name,
+  &__email,
+  &__company,
+  &__message {
+    width: 100%;
+    height: 2rem;
+    padding: 0.5rem;
+    border-radius: 8px;
+    border: 1px solid #9BA4B5;
+    background-color: #dde6ed;
+    margin: 0.5rem 0 0;
+  }
+  ::-webkit-input-placeholder {
+    color: #000;
+    opacity: 80%;
+  }
+  
+
+  &__message {
+    height: 5rem;
+    width: 9.2rem;
+    resize: none;
+    width: 100%;
+    padding: 0.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  &__button {
+    padding: 0.5rem;
+    margin-top: 0.2rem;
+    width: 30%;
+    border-radius: 10px;
+    border: 0;
+    background-color: #dde6ed;
+    color: #000;
+  }
+}
+
+label {
+  background-color: $jp-tan;
+}
+
+
