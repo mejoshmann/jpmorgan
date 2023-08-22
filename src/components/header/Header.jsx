@@ -53,8 +53,8 @@ function Header() {
           <span></span>
         </div>
 
-        <ul className={`list ${isOpen ? "open" : ""}`}>
-          <li className="list__item" ref={dropdownRef}>
+        <ul className={`list ${isOpen ? "open" : ""} `}>
+          <li className="list__item" >
             <Link className="link" to="/About">
               About
             </Link>
