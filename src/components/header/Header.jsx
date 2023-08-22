@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import "./Header.scss";
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const [showNav, setShowNav] = useState(true);
-  // const dropdownRef = useRef();
+  const dropdownRef = useRef();
 
   const handleToggle = () => {
     setIsOpen(!isOpen);
@@ -20,19 +20,19 @@ function Header() {
     }
   };
 
-  // const handleClickOutside = (e) => {
-  //   if (dropdownRef.current && !dropdownRef.current.contains(e.target)) {
-  //     setIsOpen(false);
-  //   }
-  // };
+  const handleClickOutside = (e) => {
+    if (dropdownRef.current && !dropdownRef.current.contains(e.target)) {
+      setIsOpen(false);
+    }
+  };
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
-    // document.addEventListener("mousedown", handleClickOutside);
+    document.addEventListener("mousedown", handleClickOutside);
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
-      // document.removeEventListener("mousedown", handleClickOutside);
+      document.removeEventListener("mousedown", handleClickOutside);
     };
   }, [isOpen]);
 
@@ -54,7 +54,7 @@ function Header() {
         </div>
 
         <ul className={`list ${isOpen ? "open" : ""}`}>
-          <li className="list__item">
+          <li className="list__item" ref={dropdownRef}>
             <Link className="link" to="/About">
               About
             </Link>
