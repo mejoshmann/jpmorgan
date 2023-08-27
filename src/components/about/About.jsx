@@ -1,9 +1,10 @@
+import { bodyRef } from "react";
 import "./About.scss";
 
 function About() {
   return (
     <>
-      <section className="about">
+      <section className="about" ref={bodyRef} id="about">
         <h2 className="about__heading">About Us</h2>
         <section className="about__container">
           <aside className="about__left">
