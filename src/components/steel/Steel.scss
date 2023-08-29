@@ -1,0 +1,91 @@
+@use "../../Styles/Partials/mixins" as *;
+
+.steel {
+}
+
+.marine {
+
+    @include desktop {
+        display: flex;
+        flex-direction: row;
+        padding: 0 3rem;
+        
+    }
+    
+    &__image {
+        background-image: url("../../images/protect.jpeg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 45vh;
+        width: 95vw;
+        margin: auto;
+
+        @include desktop {
+            width: 50vw;
+        }
+        
+    }
+
+    &__heading {
+        font-size: 2rem;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    &__right {
+        padding: 1.5rem;
+
+        @include desktop {
+           display: flex;
+           align-items: center;
+        }
+    }
+
+    &__copy {
+        font-size: 1.3rem;
+        text-align: center;
+
+        @include desktop {
+            font-size: 1.7rem;
+        }
+    }
+}
+
+.steelwork {
+
+    @include desktop {
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 0 3rem;
+    }
+
+    &__image {
+        background-image: url("../../images/dock.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 50vh;
+        width: 95vw;
+        margin: auto;
+
+        @include desktop {
+            width: 50vw;
+        }
+    }
+
+
+    &__right {
+        padding: 1.5rem;
+        display: flex;
+            align-items: center;
+            justify-content: center;
+    }
+
+    &__copy {
+        font-size: 1.3rem;
+        text-align: center;
+
+        @include desktop {
+            
+        }
+    }
+}

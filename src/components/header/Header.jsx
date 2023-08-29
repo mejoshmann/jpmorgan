@@ -26,7 +26,6 @@ function Header() {
     }
   };
 
-
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     document.addEventListener("mousedown", handleClickOutside);
@@ -37,22 +36,12 @@ function Header() {
     };
   }, [isOpen]);
 
-  // const handleClick = (sectionRef) => {
-  //   if (sectionRef.current) {
-  //     sectionRef.current.scrollIntoView({behavior: "smooth"});
-  //   }
-  //   setIsOpen(false);
-  // };
-
-
   return (
     <header className="header">
       <nav
         className="nav"
         style={{ opacity: showNav ? 1 : 0, transition: "opacity 0.5s" }}
       >
-      
-
         <Link className="link" to="/Home">
           <h1 className="logo">JP MORGAN</h1>
           <h3 className="logo">CONSTRUCTION</h3>
@@ -63,10 +52,10 @@ function Header() {
         </div>
 
         <ul className={`list ${isOpen ? "open" : ""} `}>
-          <li className="list__item" >
-            <a className="link"  href="#about">
-              About
-            </a>
+          <li className="list__item">
+              <a className="link" href="#about">
+                About
+              </a>
           </li>
           <li className="list__item">
             <Link className="link" to="/Projects">
@@ -74,8 +63,8 @@ function Header() {
             </Link>
           </li>
           <li className="list__item">
-            <Link className="link" to="/steel">
-              Steel Work
+            <Link className="link" to="/Steel">
+              Marine
             </Link>
           </li>
           <li className="list__item">
@@ -84,7 +73,7 @@ function Header() {
             </a>
           </li>
         </ul>
-        </nav>
+      </nav>
     </header>
   );
 }
