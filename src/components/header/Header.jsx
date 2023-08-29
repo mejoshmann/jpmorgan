@@ -11,6 +11,7 @@ function Header() {
     setIsOpen(!isOpen);
   };
 
+  useEffect(() => {
   const handleScroll = () => {
     const scrollY = window.scrollY;
     const scrollThreshold = 100;
@@ -26,7 +27,7 @@ function Header() {
     }
   };
 
-  useEffect(() => {
+ 
     window.addEventListener("scroll", handleScroll);
     document.addEventListener("mousedown", handleClickOutside);
 
@@ -34,7 +35,7 @@ function Header() {
       window.removeEventListener("scroll", handleScroll);
       document.removeEventListener("mousedown", handleClickOutside);
     };
-  }, [isOpen, handleScroll]);
+}, [isOpen]);
 
   return (
     <header className="header">
