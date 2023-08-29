@@ -3,7 +3,6 @@ import "./App.scss";
 import Home from "./pages/Home";
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
-// import Body from "./components/body/Body";
 import About from "./components/about/About";
 import Steel from "./components/steel/Steel";
 import Projects from "./pages/Projects";
