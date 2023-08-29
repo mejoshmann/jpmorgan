@@ -14,10 +14,10 @@ function App() {
       <div className="App">
         <Header />
         <Routes>
-          <Route path="/Home" element={<Home />} />
+          <Route path="/" element={<Home />} />
+          {/* <Route path="/About" element={<Home />} /> */}
           <Route path="/Steel" element={<Steel />} />
-          <Route path="/About" element={<Home />} />
-          <Route path="/Projects" element={<Projects />} />
+          {/* <Route path="/Projects" element={<Projects />} /> */}
         </Routes>
         <About />
         <Footer />

@@ -43,7 +43,7 @@ function Header() {
         className="nav"
         style={{ opacity: showNav ? 1 : 0, transition: "opacity 0.5s" }}
       >
-        <Link className="link" to="/Home">
+        <Link className="link" to="/">
           <h1 className="logo">JP MORGAN</h1>
           <h3 className="logo">CONSTRUCTION</h3>
         </Link>
