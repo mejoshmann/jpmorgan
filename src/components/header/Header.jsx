@@ -34,7 +34,7 @@ function Header() {
       window.removeEventListener("scroll", handleScroll);
       document.removeEventListener("mousedown", handleClickOutside);
     };
-  }, [isOpen]);
+  }, [isOpen, handleScroll]);
 
   return (
     <header className="header">
