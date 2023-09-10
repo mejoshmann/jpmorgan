@@ -54,9 +54,9 @@ function Header() {
 
         <ul className={`list ${isOpen ? "open" : ""} `}>
           <li className="list__item">
-              <a className="link" href="#about">
+              <Link className="link" to="/About">
                 About
-              </a>
+              </Link>
           </li>
           <li className="list__item">
             <Link className="link" to="/Projects">
@@ -64,14 +64,14 @@ function Header() {
             </Link>
           </li>
           <li className="list__item">
-            <Link className="link" to="/Steel">
+            <Link className="link" to="/Marine">
               Marine
             </Link>
           </li>
           <li className="list__item">
-            <a className="link" href="#contact">
+            <Link className="link" to="/Contact">
               Contact
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>

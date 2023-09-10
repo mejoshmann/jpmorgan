@@ -7,27 +7,12 @@ body {
 }
 
 .body {
-    height: 100vh;
-    width: 100vw;
-    background-image: url("../../images/body.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
- 
-
+  
     &__container {
-        width: 90vw;
+        width: 100vw;
         height: 100vh;
-        padding: 1rem;
-     
-        @include desktop {
-          padding: 1rem 5%;
-        }
-    
+       
     }
-
 
     &__heading {
         color: #76323f;
@@ -37,37 +22,52 @@ body {
         z-index: 1;
     }
 
+    &__flyer {
+      height: 15rem;
+      background-color: $jp-tan;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+}
+
+.heading {
+  background-color: $jp-tan;
+  color: #000;
+  font-size: 3rem;
+  font-weight: 700;
 }
 
 .slick-dots {
-  li {
-    button {
-      font-size: 14px;
-      color: $jp-red;
-      background-color:e transparent;
-      width: 15px;
-      height: 15px;
-      margin: 0 5px;
-    }
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  padding: .2rem;
+  display: inline-block
+  
+}
 
-    &.slick-active {
-      button {
-      }
-    }
-  }
+.slick-dots li button:before {
+  font-size: 1.2rem;
+  line-height: 0;
+}
+
+.slick-dots li.slick-active button:before {
+  color: $jp-red;
 }
 
 .slide1 {
-    background-image: url("../../images/mainhouse.jpg");
+    background-image: url("../../images/body.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 82vh;
-    opacity: 90%;
-    border-radius: 10px;
+    height: 100vh;
+    width: 100vw;
+  
 
     @include desktop {
-      // background-size: 60%;
 
     
     }
@@ -78,23 +78,32 @@ body {
     background-image: url("../../images/bigkitchen.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    height: 82vh;
-    width: 100%;
     background-position: center;
-    opacity: 90%;
-    border-radius: 10px;
+    width: 100vw;
+    height: 100vh;
 
-    @include desktop {
-      background-size: cover;
-    }
+ 
 }
 
-.slick-arrow.slick-next::before{
-  color: $jp-red;
+.slide3 {
+  background-image: url("../../images/frames.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
 }
-.slick-arrow.slick-prev::before {
-  color: $jp-red;
+
+.slide4 {
+  background-image: url("../../images/room.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
 }
+
+
 
 
 

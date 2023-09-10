@@ -5,197 +5,105 @@
 .footer {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  background-color: $jp-tan;
-
-  @include tablet {
-     
-  }
+  justify-content: center;
+  text-align: center;
+  padding: 1.5rem;
 
   @include desktop {
+    margin: 0 10%;
   }
 
-  &__heading {
-    background-color: $jp-tan;
-    text-align: left;
-    margin: 1rem 0 0 1rem;
-    color: #000;
-    text-align: center;
-
-    @include tablet {
-      font-size: 2rem;
-    }
-
-  }
-
-  &__aside {
-    height: 100%;
-    width: 100%;
-    background-color: $jp-tan;
-
-    @include tablet {
-      padding: 1rem;
-    }
-
-    @include desktop {
-      height: 50vh;
-    }
-  }
 
   &__right {
-      height: 10rem;
-      background-color: #fff;
-      display: flex;
-      flex-direction: row;
-      width: 100%;
-      padding: 1rem;
-      justify-content: space-between;
-      align-items: center;
-
-      @include tablet {
-        height: 15rem;
-        
-      }
-  }
-
-  &__details {
-      height: 5rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-  }
-
-  &__details--heading {
     background-color: #fff;
-    color: #000;
-    font-size: .8rem;
+    width: 100%;
 
     @include tablet {
-      font-size: 1.2rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 2rem 2rem;
     }
   }
 
-  &__details--email {
-    font-size: .9rem;
-    text-decoration: underline;
-  }
 
-  &__details--number {
-    font-size: .9rem;
-  }
+&__details {
+  height: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 
-  &__socials--container {
+  @include tablet {
     display: flex;
-    flex-direction: row;
-    align-items: center;
   }
+}
 
-  &__socials {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-  }
+&__details--heading {
+background-color: #fff;
+color: #000;
+font-size: .8rem;
 
-  &__copyright {
+@include tablet {
+  font-size: 1.2rem;
+}
+}
 
-  }
- 
+&__details--email {
+font-size: .9rem;
+text-decoration: underline;
+}
+
+&__details--number {
+font-size: .9rem;
+}
+
+&__socials--container {
+display: flex;
+flex-direction: row;
+align-items: center;
+}
+
+&__socials {
+display: flex;
+flex-direction: column;
+align-items: center;
+
+}
+
+&__copyright {
+
+}
+
 
 
 &__fb,
 &__insta,
 &__twitter {
-    background-image: url(../../icons/facebook.png);
-    width: 1.5rem;
-    height: 1.5rem;
-    background-size: cover;
-    margin: 1rem;
+background-image: url(../../icons/facebook.png);
+width: 1.5rem;
+height: 1.5rem;
+background-size: cover;
+margin: 1rem;
 
 
-    @include tablet {
-    width: 3rem;
-    height: 3rem;
-    cursor: pointer;
-    background-color: #fff;
-    margin: 2rem;
-    }
+@include tablet {
+width: 3rem;
+height: 3rem;
+cursor: pointer;
+background-color: #fff;
+margin: 2rem;
+}
 }
 
 &__insta {
-    background-image: url(../../icons/instagram.png); 
+background-image: url(../../icons/instagram.png); 
 }
 
 &__twitter {
 
 }
-
-&__blurb {
-  padding:  1rem;
-
-  @include tablet {
-  padding: 1% 4%;
-  }
-}
 }
 
-.form {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  background-color: $jp-tan;
-  padding: 1rem;
-
-  @include tablet {
-    padding: 1% 3rem;
-
-  }
-
-  &__name,
-  &__email,
-  &__company,
-  &__message {
-    width: 100%;
-    height: 2rem;
-    padding: 0.5rem;
-    border-radius: 4px;
-    border: 1px solid #9BA4B5;
-    background-color: #dde6ed;
-    margin: 0.5rem 0 0;
-
-  }
-  ::-webkit-input-placeholder {
-    color: #000;
-    opacity: 80%;
-  }
-  
-
-  &__message {
-    height: 5rem;
-    width: 9.2rem;
-    resize: none;
-    width: 100%;
-    padding: 0.5rem;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-
-  &__button {
-    padding: 0.5rem;
-    margin-top: 0.2rem;
-    width: 30%;
-    border-radius: 4px;
-    border: 0;
-    background-color: #dde6ed;
-    color: #000;
-  }
-
-
-
-
-}
-
-label {
-  background-color: $jp-tan;
-}
-
+ 
 

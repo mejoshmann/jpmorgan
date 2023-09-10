@@ -1,10 +1,8 @@
 import "./Steel.scss";
 
-
 function Steel() {
   return (
     <>
-
       <div className="steel">
         <section className="marine">
           <aside className="marine__left">
@@ -23,17 +21,25 @@ function Steel() {
             </p>
           </aside>
         </section>
-      <section className="steelwork">
+        <section className="steelwork">
           <aside className="steelwork__left">
             <h2 className="marine__heading">Steelwork</h2>
             <div className="steelwork__image"></div>
           </aside>
           <aside className="steelwork__right">
-            <p className="marine__copy">Elevate your waterfront experience with our versatile floating dock solutions, available in both steel and aluminum options. Whether you prefer the robust strength of steel or the lightweight durability of aluminum, our expert craftsmen will tailor a floating dock to perfectly match your property's unique requirements. Experience a seamless blend of form and function as we bring your vision to life, providing a safe, stylish, and stable platform for years of enjoyment on the water.</p>
+            <p className="marine__copy">
+              Elevate your waterfront experience with our versatile floating
+              dock solutions, available in both steel and aluminum options.
+              Whether you prefer the robust strength of steel or the lightweight
+              durability of aluminum, our expert craftsmen will tailor a
+              floating dock to perfectly match your property's unique
+              requirements. Experience a seamless blend of form and function as
+              we bring your vision to life, providing a safe, stylish, and
+              stable platform for years of enjoyment on the water.
+            </p>
           </aside>
         </section>
       </div>
-     
     </>
   );
 }
