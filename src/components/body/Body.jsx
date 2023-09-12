@@ -18,12 +18,12 @@ function Body() {
     <div className="body">
       <div className="body__container">
         <Slider {...settings}>
-          <div className="slide1">
+          <div className="slide slide1">
             <h2 className="body__heading">Building the future</h2>
           </div>
-          <div className="slide2"></div>
-          <div className="slide3"></div>
-          <div className="slide4"></div>
+          <div className="slide slide2"></div>
+          <div className="slide slide3"></div>
+          <div className="slide slide4"></div>
         </Slider>
       </div>
       <div className="body__flyer">

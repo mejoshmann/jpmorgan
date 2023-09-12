@@ -7,6 +7,7 @@ body {
 }
 
 .body {
+
   
     &__container {
         width: 100vw;
@@ -58,49 +59,28 @@ body {
   color: $jp-red;
 }
 
+.slide {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  width: 100vw;
+}
+
 .slide1 {
     background-image: url("../../images/body.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 100vh;
-    width: 100vw;
-  
-
-    @include desktop {
-
-    
-    }
-
 }
 
 .slide2 {
     background-image: url("../../images/bigkitchen.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 100vw;
-    height: 100vh;
-
- 
 }
 
 .slide3 {
   background-image: url("../../images/frames.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 100vw;
-  height: 100vh;
 }
 
 .slide4 {
   background-image: url("../../images/room.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 100vw;
-  height: 100vh;
 }
 
 
