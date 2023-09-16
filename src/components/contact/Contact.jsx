@@ -1,6 +1,13 @@
 import "./Contact.scss";
 
 function Contact() {
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    
+  }
+
+  
   return (
     <section className="contact">
             <h2 className="contact__heading">Contact Us</h2>
@@ -17,7 +24,8 @@ function Contact() {
           touch today, and let's lay the foundation for your next successful
           project!
         </p>
-        <form className="form">
+        
+        <form className="form" onSubmit={sendEmail}>
           <label htmlFor="name" className="name">
             <input
               type="text"
@@ -56,7 +64,7 @@ function Contact() {
             />
           </label>
 
-          <button className="form__button" type="submit">
+          <button className="form__button" type="submit" >
             SUBMIT
           </button>
         </form>

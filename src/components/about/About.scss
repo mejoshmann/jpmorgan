@@ -1,9 +1,11 @@
 @use "../../Styles/Partials/mixins" as *;
+@use "../../Styles/Partials/colors" as *;
 
 .about {
   width: 100%;
   height: 100%;
   padding-bottom: 5rem;
+  background-color: $jp-tan;
 
   &__image {
     background-image: url("../../images/plan.jpg");
@@ -34,18 +36,27 @@
     text-align: center;
     padding: 3rem;
     font-size: 2rem;
-    
   }
 
   &__what {
     font-size: 2.2rem;
+    font-weight: 700;
     text-align: center;
     padding: 1.5rem 0 2rem 0;
+    // background-color: #fff;
+    width: 100%;
+    color: $jp-red;
+    
   }
 
   &__wedo {
     font-size: 1.2rem;
     line-height: 1.3;
+    padding: 0 5%;
+
+    @include desktop {
+      padding: 0 2%;
+    }
   }
 
   &__left,
@@ -96,5 +107,39 @@
 }
 
 .container {
-  border: 1px solid green;
+  // padding: 5rem 0;
+  display: flex;
+  flex-direction: column;
+
+  @include tablet {
+
+  }
+
+  @include desktop {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 2%;
+  }
+  
+
+  &__box {
+    padding: 2% 5%;
+
+    @include desktop {
+      width: 33.333%;
+      padding: 2%;
+
+    }
+  }
+
+  &__box--heading {
+    padding: 1rem;
+    text-align: center;
+    color: $jp-red;
+  }
+
+  &__box--content {
+    text-align: center;
+  }
 }

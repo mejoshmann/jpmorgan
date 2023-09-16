@@ -2,53 +2,65 @@
 @use "../../Styles/Partials/mixins" as *;
 
 .contact {
-
-
-  @include desktop {
-    
-  }
+ 
 
   &__parallax {
-  background-image: url(../../images/room.jpg);
-  min-height: 20rem;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+    background-image: url(../../images/room.jpg);
+    min-height: 15rem;
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: auto 50%;
+
+    @include tablet {
+      background-size: auto 80%;
+      background-position: top;
+      min-height: 25rem;
+    }
+    
+    @include desktop {
+        background-size: cover;
+    }
   }
 
-    &__heading {
-        font-size: 2rem;
-        height: 12rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+  &__heading {
+    font-size: 2rem;
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-&__aside {
-   
+  &__aside {
     background-color: $jp-tan;
 
     @include tablet {
+      display: flex;
+      flex-direction: column;
     }
 
     @include desktop {
       display: flex;
       flex-direction: row;
-      padding: 2% 10%;
+      padding: 5% 10%;
     }
   }
 
+  &__blurb {
+    padding: 5%;
+    font-size: 1.1rem;
 
+    @include tablet {
+      padding: 5% 5% 2% 5%;
+      font-size: 1.4rem;
+      line-height: 1.4;
+    }
 
-&__blurb {
-
-  @include tablet {
-  font-size: 1.4rem;
-  line-height: 1.4;
-  width: 50%;
+    @include desktop {
+      padding: 2% 1% 2% 0;
+      width: 50%;
+    }
   }
-}
 }
 
 .form {
@@ -56,12 +68,15 @@
   flex-direction: column;
   width: 100%;
   border-radius: 4px;
-  padding: 1.5rem;
-  // box-shadow: inset 0 0 0 500px rgba(5, 5, 5, 0.5);
-
+  padding: 0 5% 10% 5%;
 
   @include tablet {
+    padding: 0 5% 5% 5%;
+  }
+
+  @include desktop {
     width: 50%;
+    padding: 2% 0 0 1%;
   }
 
   &__name,
@@ -72,16 +87,14 @@
     height: 2rem;
     padding: 0.5rem;
     border-radius: 4px;
-    border: 1px solid #9BA4B5;
+    border: 1px solid #9ba4b5;
     background-color: #dde6ed;
     margin: 0.5rem 0 0;
-
   }
   ::-webkit-input-placeholder {
     color: #000;
     opacity: 80%;
   }
-  
 
   &__message {
     height: 5rem;
@@ -95,12 +108,10 @@
   &__button {
     padding: 0.5rem;
     margin-top: 0.2rem;
-    width: 30%;
+    width: 100%;
     border-radius: 4px;
     border: 0;
     background-color: #dde6ed;
     color: #000;
   }
-
-
 }

@@ -4,7 +4,7 @@ function About() {
   return (
     <>
       <section className="about">
-        <h2 className="about__heading">About Us</h2>
+        {/* <h2 className="about__heading">About Us</h2> */}
         <div className="about__image"></div>
         <section className="about__container">
           <h2 className="about__what">What we do..</h2>
@@ -19,59 +19,58 @@ function About() {
           <div className="container">
             <div className="container__box">
               <h2 className="container__box--heading">New Build</h2>
-              <p className="container__box--content"></p>
+              <p className="container__box--content">
+                If you are subdividing, buying a section or knocking down and
+                rebuilding, let us create your dream home from the ground up.
+              </p>
             </div>
 
             <div className="container__box">
               <h2 className="container__box--heading">Commercial</h2>
-              <p className="container__box--content"></p>
+              <p className="container__box--content">
+                We specialize in providing comprehensive commercial construction
+                services. Our team brings expertise and resources to every
+                project, whether it's building, renovating, or expanding
+                commercial properties. We ensure that all our projects meet
+                stringent safety, regulatory, and aesthetic standards,
+                delivering excellence in every aspect of construction.
+              </p>
             </div>
 
             <div className="container__box">
               <h2 className="container__box--heading">Renovations</h2>
-              <p className="container__box--content"></p>
+              <p className="container__box--content">
+                No need to move! Redesigning the layout of your current home can
+                open it up and increase its value.
+              </p>
             </div>
 
             <div className="container__box">
               <h2 className="container__box--heading">Project Management</h2>
-              <p className="container__box--content"></p>
+              <p className="container__box--content">
+                We offer Full Project Management from start to finnish. Building
+                doesn't need to be a headache, let us do the organizing for you
+              </p>
             </div>
 
             <div className="container__box">
               <h2 className="container__box--heading">Alterations</h2>
-              <p className="container__box--content"></p>
+              <p className="container__box--content">
+                Moving walls and rearranging layouts to make your home just as
+                you want it. We work with the space you have with as little
+                disruption as possible.
+              </p>
             </div>
 
             <div className="container__box">
-              <h2 className="container__box--heading">Additions</h2>
-              <p className="container__box--content"></p>
+              <h2 className="container__box--heading">Marine</h2>
+              <p className="container__box--content">
+                We offers professional waterfront protection services, including
+                expert floating dock repair and new build solutions, ensuring
+                the longevity and safety of your waterfront property.
+              </p>
             </div>
-
           </div>
-
-          {/* <aside className="about__left">
-            <h3 className="about__left--heading">What We Do</h3>
-            <p className="about__left--content">
-             
-            </p>
-          </aside>
-          <aside className="about__middle">
-            <h3 className="about__middle--heading">Working Together</h3>
-            <p className="about__middle--content">
-              We offer an end-to-end client experience that includes seamless
-              communication, budgeting, staffing, on-site organization, and
-              solid, quality handiwork every time.
-            </p>
-          </aside>
-          <aside className="about__right">
-            <h3 className="about__right--heading">Why Us?</h3>
-            <p className="about__right--content">
-              We work with architects and designers to produce beautiful,
-              functional structures. Call us today and bring our project
-              management skills and extensive construction experience to your
-              next project.
-            </p>
-          </aside> */}
         </section>
       </section>
     </>
