@@ -5,7 +5,7 @@ import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
 import AboutPage from "./pages/AboutPage";
 import Marine from "./pages/Marine";
-import Projects from "./pages/Projects";
+import Projects from "./components/projects/Projects";
 import ContactPage from "./pages/ContactPage";
 import React from "react";
 

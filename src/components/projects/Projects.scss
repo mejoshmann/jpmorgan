@@ -1,0 +1,59 @@
+@use "../../Styles/Partials/mixins" as *;
+
+h2.project--heading {
+    text-align: center;
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+.container {
+
+@include desktop {
+
+}
+
+&__mainImage {
+
+    @include desktop {
+    height: 70vh;
+    width: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-image: url("../../images/frames.jpg")
+    }
+}
+
+&__thumbnails {
+    
+    @include desktop {
+        display: flex;
+        // flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+        width: 100%;
+    }
+}
+
+&__thumbnail {
+    @include desktop {
+        border: 1px solid black;
+        height: 20rem;
+        width: 50%;
+    }
+}
+
+&__right {
+    text-align: right;
+}
+
+&__thumbnail--image {
+    @include desktop {
+        border: 1px solid red;
+        width: 50%;
+    }
+}
+}
