@@ -8,9 +8,10 @@
   justify-content: center;
   text-align: center;
   padding: 1.5rem;
+  background-color: #fff;
 
   @include desktop {
-    margin: 0 10%;
+    padding: 1.5rem 10%;
   }
 
 

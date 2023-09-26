@@ -4,10 +4,9 @@ function About() {
   return (
     <>
       <section className="about">
-        {/* <h2 className="about__heading">About Us</h2> */}
         <div className="about__image"></div>
         <section className="about__container">
-          <h2 className="about__what">What we do..</h2>
+          <h2 className="about__what">WHAT WE DO..</h2>
           <p className="about__wedo">
             From new construction to renovations, our portfolio unites artistry
             and precision. Occupied sites pose no challenge, and we excel in
