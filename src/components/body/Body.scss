@@ -40,6 +40,7 @@ body {
   color: $jp-red;
   font-size: 3rem;
   font-weight: 700;
+ 
 }
 
 .slick-dots {
@@ -69,11 +70,11 @@ body {
 }
 
 .slide1 {
-    background-image: url("../../images/body.jpg");
+    background-image: url("../../images/body/body.jpg");
 }
 
 .slide2 {
-    background-image: url("../../images/bigkitchen.jpg");
+    background-image: url("../../images/body/front-house.jpg");
 }
 
 .slide3 {
@@ -81,7 +82,7 @@ body {
 }
 
 .slide4 {
-  background-image: url("../../images/room.jpg");
+  background-image: url("../../images/body/room.jpg");
 }
 
 

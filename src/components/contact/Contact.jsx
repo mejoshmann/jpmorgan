@@ -10,11 +10,12 @@ function Contact() {
   
   return (
     <section className="contact">
-            <h2 className="contact__heading">Contact Us</h2>
 
       <div className="contact__parallax"></div>
+      <h2 className="contact__heading">Contact Us</h2>
 
       <aside className="contact__aside">
+        
         <p className="contact__blurb">
           Ready to turn your construction dreams into reality? We can't wait to
           hear from you! Whether you're planning a new project, seeking expert

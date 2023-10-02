@@ -2,30 +2,35 @@
 @use "../../Styles/Partials/mixins" as *;
 
 .contact {
- 
-
   &__parallax {
-    background-image: url(../../images/room.jpg);
-    min-height: 15rem;
-    background-attachment: fixed;
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: auto 50%;
+    background-image: url(../../images/body/room.jpg);
+    // height: 60vh;
+    // width: 100vw;
+    // background-size: cover;
+    // background-repeat: no-repeat;
+    // background-attachment: fixed;
+    // background-position: center;
 
     @include tablet {
       background-size: auto 80%;
       background-position: top;
       min-height: 25rem;
     }
-    
+
     @include desktop {
-        background-size: cover;
+      height: 60vh;
+    width: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
     }
   }
 
   &__heading {
     font-size: 2rem;
-    height: 6rem;
+    // height: 6rem;
+    padding: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -43,7 +48,7 @@
     @include desktop {
       display: flex;
       flex-direction: row;
-      padding: 5% 10%;
+      padding: 0 10% 5% 10%;
     }
   }
 

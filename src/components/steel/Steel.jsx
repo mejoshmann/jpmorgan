@@ -4,41 +4,54 @@ function Steel() {
   return (
     <>
       <div className="steel">
-        <section className="marine">
-          <aside className="marine__left">
-            <h2 className="marine__heading">Marine</h2>
-            <div className="marine__image"></div>
-          </aside>
-          <aside className="marine__right">
-            <p className="marine__copy">
-              Enhance the longevity and resilience of your waterfront dream
-              property with our premium steel reinforcing services. Our expert
-              team specializes in reinforcing key structural elements, ensuring
-              your construction stands firm against the dynamic forces of
-              waterfront environments. Count on us to fortify your vision and
-              create a home that withstands the test of time by utilizing
-              cutting-edge steel reinforcement techniques.
-            </p>
-          </aside>
-        </section>
-        <section className="steelwork">
-          <aside className="steelwork__left">
-            <h2 className="marine__heading">Steelwork</h2>
-            <div className="steelwork__image"></div>
-          </aside>
-          <aside className="steelwork__right">
-            <p className="marine__copy">
-              Elevate your waterfront experience with our versatile floating
-              dock solutions, available in both steel and aluminum options.
-              Whether you prefer the robust strength of steel or the lightweight
-              durability of aluminum, our expert craftsmen will tailor a
-              floating dock to perfectly match your property's unique
-              requirements. Experience a seamless blend of form and function as
-              we bring your vision to life, providing a safe, stylish, and
-              stable platform for years of enjoyment on the water.
-            </p>
-          </aside>
-        </section>
+        <div className="steel__main-image"></div>
+        <div className="steel__heading">Marine</div>
+
+        <div className="steel__container">
+          <p className="steel__blurb">
+            Enhance your waterfront lifestyle with our exceptional floating dock
+            solutions, proudly serving Vancouver. We are dedicated to crafting
+            floating docks that redefine your connection to the water.
+            Harnessing the lightweight durability of aluminum, our skilled
+            artisans meticulously tailor each floating dock to harmonize with
+            your property's distinctive features. We're not just builders; we're
+            creators of aquatic experiences. Imagine a waterfront that
+            seamlessly blends form and function, that's what we deliver. From
+            the initial concept to the final installation, our team is driven by
+            a passion for precision, ensuring your vision becomes a reality.
+            With safety as our top priority, we engineer stable and stylish
+            platforms that stand the test of time. Our floating docks aren't
+            just structures; they're gateways to unforgettable moments on the
+            water. Discover the transformative power of a floating dock, where
+            Vancouver's stunning landscapes meet innovation and craftsmanship.
+            Elevate your waterfront experience today. Contact us to discuss your
+            project, and let's set sail on a journey of waterfront dreams."
+          </p>
+          <div className="steel__thumbnails">
+            <div className="steel__thumbnail">
+              <div className="steel__image dock1"></div>
+            </div>
+
+            <div className="steel__thumbnail">
+              <div className="steel__image dock2"></div>
+            </div>
+            <div className="steel__thumbnail">
+              <div className="steel__image dock3"></div>
+            </div>
+
+            <div className="steel__thumbnail">
+              <div className="steel__image dock4"></div>
+            </div>
+
+            <div className="steel__thumbnail">
+              <div className="steel__image dock5"></div>
+            </div>
+
+            <div className="steel__thumbnail">
+              <div className="steel__image dock6"></div>
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );

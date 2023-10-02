@@ -3,9 +3,7 @@ import Body from "../components/body/Body";
 function Home() {
     return(
         <>
-
         <Body />
-        
         </>
     )
 }
