@@ -6,26 +6,21 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   text-align: center;
   padding: 1.5rem;
-  background-color: #fff;
+  background-color: $jp-tan;
 
-  @include desktop {
-    padding: 1.5rem 10%;
+  @include tablet {
+    flex-direction: row;
+    align-items: center;
+    gap: 40%;
   }
 
+  @include desktop {
+    padding: 3rem 5%;
+    
 
-  &__right {
-    background-color: #fff;
-    width: 100%;
-
-    @include tablet {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      padding: 2rem 2rem;
-    }
   }
 
 
@@ -34,16 +29,21 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  color: $jp-red;
+  
+
 
   @include tablet {
     display: flex;
+    height: 100%;
+    width: 100%;
+    line-height: 2;
   }
 }
 
 &__details--heading {
-background-color: #fff;
-color: #000;
-font-size: .8rem;
+background-color: $jp-tan;
+color: $jp-red;
 
 @include tablet {
   font-size: 1.2rem;
@@ -51,28 +51,33 @@ font-size: .8rem;
 }
 
 &__details--email {
-font-size: .9rem;
 text-decoration: underline;
 }
 
 &__details--number {
-font-size: .9rem;
 }
+
+&__socials {
+  width: 100%;
+  height: 100%;
+}
+
 
 &__socials--container {
 display: flex;
 flex-direction: row;
-align-items: center;
+justify-content: center;
+gap: 5%;
+
+@include tablet {
+  gap: 25%;
+}
 }
 
-&__socials {
-display: flex;
-flex-direction: column;
-align-items: center;
 
-}
 
 &__copyright {
+  color: $jp-red;
 
 }
 
@@ -82,18 +87,16 @@ align-items: center;
 &__insta,
 &__twitter {
 background-image: url(../../icons/facebook.png);
-width: 1.5rem;
-height: 1.5rem;
+width: 2rem;
+height: 2rem;
 background-size: cover;
 margin: 1rem;
 
-
 @include tablet {
-width: 3rem;
-height: 3rem;
+width: 3.5rem;
+height: 3.5rem;
 cursor: pointer;
-background-color: #fff;
-margin: 2rem;
+padding: 2rem;
 }
 }
 

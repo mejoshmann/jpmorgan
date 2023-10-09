@@ -1,6 +1,9 @@
 import "./Steel.scss";
 
 function Steel() {
+
+ 
+
   return (
     <>
       <div className="steel">
@@ -12,6 +15,8 @@ function Steel() {
             Enhance your waterfront lifestyle with our exceptional floating dock
             solutions, proudly serving Vancouver. We are dedicated to crafting
             floating docks that redefine your connection to the water.
+
+              <div className="steel__hidden">
             Harnessing the lightweight durability of aluminum, our skilled
             artisans meticulously tailor each floating dock to harmonize with
             your property's distinctive features. We're not just builders; we're
@@ -26,6 +31,7 @@ function Steel() {
             Vancouver's stunning landscapes meet innovation and craftsmanship.
             Elevate your waterfront experience today. Contact us to discuss your
             project, and let's set sail on a journey of waterfront dreams."
+            </div>
           </p>
           <div className="steel__thumbnails">
             <div className="steel__thumbnail">

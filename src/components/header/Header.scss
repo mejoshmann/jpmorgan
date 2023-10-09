@@ -2,125 +2,116 @@
 @use "../../Styles/Partials/fonts" as *;
 @use "../../Styles/Partials/colors" as *;
 
-
-h1 {
-    font-size: 1.6rem;
-    letter-spacing: .167rem;
-    background-color: $jp-red;
-    color: #fff;
-
-}
-
-h3 {
-    font-size: 1rem;
-    letter-spacing: .23rem;
-    background-color: $jp-red;
-    color: #fff;
-
-}
-
-
-
-
 .nav {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    height: 5rem;
-    padding: 0 1rem;
-    background-color: $jp-red;
-    position: relative;
-    width: 100%;
-    z-index: 1000;
-    box-shadow: 5px -15px 5px 15px $jp-tan;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 5rem;
+  padding: 0 1rem; 
+  background-color: #fff;
+  position: relative;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 5px -15px 5px 15px $jp-tan;
 
+  @include tablet {
+    height: 7rem;
+    padding: 0 2%;
+  }
+
+  @include desktop {
+    padding: 0 5%;
+  }
+
+  &__JP-logo {
+    background-image: url("../../images/body/logo.jpg");
+    background-size: cover;
+    width: 14rem;
+    height: 5rem;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    top: 0;
 
     @include tablet {
+        width: 20rem;
         height: 7rem;
-        padding: 0 5%;
+        text-align: left;
     }
 
     @include desktop {
-       padding: 0 10%;
+
     }
+  }
 }
 
+
 .hamburger {
-    background-image: url("../../icons/hamburger.png");
-    width: 2rem;
-    height: 2rem;
-    background-repeat: no-repeat;
-    background-size: contain;
-    display: block;
-    position: relative;  
-    background-color: $jp-red;
-    cursor: pointer;
+  background-image: url("../../icons/hamburger.png");
+  width: 2rem;
+  height: 2rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+  position: relative;
+  background-color: #fff;
+  cursor: pointer;
 
-
-
-    @include tablet {
-        display: none;
-    }
-    
+  @include tablet {
+    display: none;
+  }
 }
 
 .logo {
-
 }
 
 .link {
-    text-decoration: none;
+  text-decoration: none;
+  color: $jp-red;
+  background-color: $jp-tan;
+
+  @include tablet {
     color: $jp-red;
-    background-color: $jp-tan;
-
-    @include tablet {
-        color: $jp-tan;
-        background-color: $jp-red;
-    }
-
+    background-color: #fff;
+    font-weight: 500;
+  }
 }
 
-
 .list {
-    font-size: 1.5rem;
-    padding: 2rem 1rem;
-    line-height: 2;
-    position: absolute;
-    width: 100%;
-    background-color: $jp-tan;
-    margin: 21rem 0 0 -1rem;
-    display: none;
-    flex-direction: column;
+  font-size: 1.5rem;
+  padding: 1rem 1.8rem;
+  line-height: 2;
+  position: absolute;
+  width: 100%;
+  background-color: $jp-tan;
+  margin: 19rem 0 0 -1rem;
+  display: none;
+  flex-direction: column;
 
-
-    @include tablet {
-        background-color: $jp-red;
-        width: 50%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        position: relative;
-        margin: 5rem 0;
-    } 
-   
+  @include tablet {
+    background-color: #fff;
+    width: 55%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    margin: 5rem 0;
+  }
 }
 
 .list.open {
-    display: block;
+  display: block;
 }
 
 .list__item {
+  display: flex;
+  flex-direction: column;
+
+  @include tablet {
     display: flex;
-    flex-direction: column;
-
-   @include tablet {
-        display: flex;
-        align-items: center;
-        margin-left: 1rem;
-    
-   }
-
-
+    align-items: center;
+    margin-left: 1rem;
+  }
 }
-

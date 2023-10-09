@@ -44,8 +44,7 @@ function Header() {
         style={{ opacity: showNav ? 1 : 0, transition: "opacity 0.5s" }}
       >
         <Link className="link" to="/">
-          <h1 className="logo">JP MORGAN</h1>
-          <h3 className="logo">CONSTRUCTION</h3>
+          <div className="nav__JP-logo"></div>
         </Link>
 
         <div className="hamburger" onClick={handleToggle}>

@@ -47,7 +47,7 @@ function About() {
             <div className="container__box">
               <h2 className="container__box--heading">Project Management</h2>
               <p className="container__box--content">
-                We offer Full Project Management from start to finnish. Building
+                We offer Full Project Management from start to finish. Building
                 doesn't need to be a headache, let us do the organizing for you
               </p>
             </div>

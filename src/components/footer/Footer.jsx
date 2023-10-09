@@ -11,11 +11,11 @@ function Footer() {
             <h4 className="footer__details--email">info@jpmorgan.com</h4>
             <h4 className="footer__details--number">250 508 5605</h4>
           </div>
+
           <div className="footer__socials">
             <div className="footer__socials--container">
               <div className="footer__fb"></div>
               <div className="footer__insta"></div>
-              <div className="footer__twitter"></div>
             </div>
             <p className="footer__copyright">
               &#169; JP Morgan Construction inc. 2003

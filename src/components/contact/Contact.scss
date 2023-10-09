@@ -4,12 +4,12 @@
 .contact {
   &__parallax {
     background-image: url(../../images/body/room.jpg);
-    // height: 60vh;
-    // width: 100vw;
-    // background-size: cover;
-    // background-repeat: no-repeat;
-    // background-attachment: fixed;
-    // background-position: center;
+    height: 60vh;
+    width: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
 
     @include tablet {
       background-size: auto 80%;
