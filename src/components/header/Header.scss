@@ -8,7 +8,7 @@
   align-items: center;
   justify-content: space-between;
   height: 5rem;
-  padding: 0 1rem; 
+  padding: 0 1rem;
   background-color: #fff;
   position: relative;
   width: 100%;
@@ -23,18 +23,15 @@
   @include desktop {
     padding: 0 5%;
   }
-
 }
 
 img {
-    width: 10rem;
-    height: auto;
+  width: 10rem;
+  height: auto;
 
-    @include tablet {
-        width: 15rem;
-    }
-
-    
+  @include tablet {
+    width: 15rem;
+  }
 }
 
 .hamburger {
@@ -43,9 +40,7 @@ img {
   height: 2rem;
   background-repeat: no-repeat;
   background-size: contain;
-  display: block;
   position: relative;
-  background-color: #fff;
   cursor: pointer;
 
   @include tablet {
@@ -58,7 +53,7 @@ img {
 
 .link {
   text-decoration: none;
-    color: $jp-red;
+  color: $jp-red;
 
   @include tablet {
     background-color: #fff;
