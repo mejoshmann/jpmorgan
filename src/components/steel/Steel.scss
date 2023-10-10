@@ -2,109 +2,113 @@
 @use "../../Styles/Partials/colors" as *;
 
 .steel {
-@include desktop {
+  @include desktop {
+  }
 
-}
+  &__main-image {
+    background-image: url("../../images/marine/slab.jpg");
+    height: 60vh;
+    width: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
 
-&__main-image {
     @include desktop {
-        background-image: url("../../images/marine/slab.jpg");
-        height: 60vh;
-        width: 100vw;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-position: center;
     }
-}
+  }
 
-&__heading {
+  &__heading {
+    padding: 3.5rem 0 0;
+    font-size: 2.2rem;
+    color: $jp-red;
+    text-align: center;
+    width: 100%;
+
     @include desktop {
-        padding: 3.5rem 0 0;
-        font-size: 2.2rem;
-        color: $jp-red;
-        text-align: center;
-        width: 100%;
     }
-}
+  }
 
-&__container {
+  &__container {
     @include desktop {
-
     }
-}
+  }
 
-&__blurb {
+  &__blurb {
     font-size: 1.2rem;
-    padding: 1rem 10%;
-}
+    padding: 1rem 2.5rem;
+  }
 
-&__thumbnails {
-    @include desktop {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-        padding: 1%;
-        width: 100%;
-        gap: 1rem;
+  &__thumbnails {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    width: 100%;
+    gap: 1rem;
+
+    @include tablet {
+
     }
-}
 
-
-&__thumbnail {
     @include desktop {
-        height: 25rem;
-        width: 30%;
     }
-}
+  }
 
-&__image {
+  &__thumbnail {
+    height: 25rem;
+    width: 100%;
+
+    @include tablet {
+        width: calc(50% - 2rem);
+        height: 30rem;
+    }
+
     @include desktop {
-        height: 100%;
-        // width: 25rem;
-        background-size: 100% 100%;
-        background-repeat: no-repeat;
+        width: calc(33.33% - 2rem);
     }
-}
+  }
 
+  &__image {
+    height: 100%;
+    width: 100%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+    @include desktop {
+    }
+  }
+
+  &__hidden {
+    display: none;
+
+    @include tablet {
+      display: block;
+    }
+  }
 }
 
 .dock1 {
-    @include desktop {
-        background-image: url("../../images/marine/slab.jpg");
-       
-    }
+  background-image: url("../../images/marine/slab.jpg");
 }
 
 .dock2 {
-    @include desktop {
-        background-image: url("../../images/marine/form.jpg");
-    }
+  background-image: url("../../images/marine/form.jpg");
 }
 
 .dock3 {
-    @include desktop {
-        background-image: url("../../images/marine/pouring.jpg");
-    }
+  background-image: url("../../images/marine/pouring.jpg");
 }
 
 .dock4 {
-    @include desktop {
-        background-image: url("../../images/marine/finished.jpg");
-    }
+  background-image: url("../../images/marine/finished.jpg");
 }
 
 .dock5 {
-    @include desktop {
-        background-image: url("../../images/marine/frame.jpg");
-    }
+  background-image: url("../../images/marine/frame.jpg");
 }
 
 .dock6 {
-    @include desktop {
-        background-image: url("../../images/marine/dock.jpg");
-    }
+  background-image: url("../../images/marine/dock.jpg");
 }
-
-

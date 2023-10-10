@@ -33,30 +33,28 @@ function Projects() {
         <h2 className="container__heading">PROJECT HIGHLIGHTS</h2>
 
         <div className="container__sub-headings">
-        <span className={`container__${selectCategory === 'Residential' ? 'res' : 'comm'}`}></span>
 
           <h3 className={`container__residential ${selectCategory === 'Residential' ? 'active' : ''}`}
-          onClick={() => handleCategoryClick('Commercial')}
+          onClick={() => handleCategoryClick('Residential')}
           >Residential</h3>
 
           <h3 className={`container__commercial ${selectCategory === 'Commercial' ? 'active' : ''}`}
           onClick={() => handleCategoryClick('Commercial')}
           >Commercial</h3>
 
-          <span className={`container__${selectCategory === 'Residential' ? 'comm' : 'res'}`}></span>
         </div>
 
         <div className="container__thumbnails">
           {selectCategory === 'Residential'
           ? residentImages.map((image, index) => (
           <div className="container__thumbnail" key={index}>
-            <img src={image} alt={`Residential ${index + 1}`}></img>
+            <img className="container__thumbnail--image" src={image} alt={`Residential ${index + 1}`}></img>
           </div>
           ))
 
           : commerchImages.map((image, index) => (
               <div className="container__thumbnail" key={index}>
-            <img src={image} alt={`Commercial ${index +1}`}></img>
+            <img className="container__thumbnail--image" src={image} alt={`Commercial ${index +1}`}></img>
           </div>
           ))}
         </div>

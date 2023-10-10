@@ -24,29 +24,18 @@
     padding: 0 5%;
   }
 
-  &__JP-logo {
-    background-image: url("../../images/body/logo.jpg");
-    background-size: cover;
-    width: 14rem;
-    height: 5rem;
-    background-repeat: no-repeat;
-    background-color: #fff;
-    position: absolute;
-    left: 0;
-    top: 0;
-
-    @include tablet {
-        width: 20rem;
-        height: 7rem;
-        text-align: left;
-    }
-
-    @include desktop {
-
-    }
-  }
 }
 
+img {
+    width: 10rem;
+    height: auto;
+
+    @include tablet {
+        width: 15rem;
+    }
+
+    
+}
 
 .hamburger {
   background-image: url("../../icons/hamburger.png");
@@ -69,11 +58,9 @@
 
 .link {
   text-decoration: none;
-  color: $jp-red;
-  background-color: $jp-tan;
+    color: $jp-red;
 
   @include tablet {
-    color: $jp-red;
     background-color: #fff;
     font-weight: 500;
   }
@@ -81,7 +68,7 @@
 
 .list {
   font-size: 1.5rem;
-  padding: 1rem 1.8rem;
+  padding: 1rem 1.4rem;
   line-height: 2;
   position: absolute;
   width: 100%;

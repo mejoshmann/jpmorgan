@@ -9,6 +9,8 @@
 
   @include desktop {
     padding-top: 0;
+    display: flex;
+    justify-content: center;
   }
 
 
@@ -19,7 +21,6 @@
     text-align: center;
   
     @include desktop {
-      border: 1px solid red;
 
     }
   }
@@ -34,8 +35,7 @@
     @include tablet {
       display: flex;
       flex-direction: row;
-      gap: 4rem;
-
+      gap: 20%;
     }
 
     @include desktop {
@@ -44,7 +44,7 @@
       display: flex;
       flex-direction: row;
       justify-content: center;
-      gap: 33%;
+      gap: 45%;
     }
   }
 
@@ -61,22 +61,12 @@
 
     @include desktop {
       font-size: 1.5rem;
-      border-radius: 10px;
-      box-shadow: 5px 7px 20px -5px $jp-red;
-      -webkit-box-shadow: 5px 7px 20px -5px $jp-red;
-      -moz-box-shadow: 5px 7px 20px -5px $jp-red;
+    
     }
   }
 
-  &__res {
-
-    @include tablet {
-    background-image: url("../../icons/arrow.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 2rem;
-    width: 2rem;
-    }
+  &__residential.active {
+    text-decoration: underline;
   }
 
   &__commercial {
@@ -89,22 +79,14 @@
 
     @include desktop {
       font-size: 1.5rem;
-      border-radius: 10px;
-      box-shadow: 5px 7px 20px -5px $jp-red;
-      -webkit-box-shadow: 5px 7px 20px -5px $jp-red;
-      -moz-box-shadow: 5px 7px 20px -5px $jp-red;
+  
     }
   }
 
-  &__comm {
-    @include tablet {
-      background-image: url("../../icons/right-arrow.png");
-      background-size: contain;
-      background-repeat: no-repeat;
-      height: 2rem;
-      width: 2rem;
-    }
+  &__commercial.active {
+    text-decoration: underline;
   }
+
 
   &__mainImage {
     height: 50vh;
@@ -156,9 +138,7 @@
 
   &__thumbnail--image {
       height: 100%;
-      background-size: 100% 100%;
-      background-repeat: no-repeat;
-      overflow: hidden;
+      width: 100%;
   }
 }
 

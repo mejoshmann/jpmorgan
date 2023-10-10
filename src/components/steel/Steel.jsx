@@ -1,8 +1,11 @@
 import "./Steel.scss";
+import { useState } from "react";
 
 function Steel() {
-
- 
+  const [readMore, setReadMore] = useState(false);
+  const handleToggle = () => {
+    setReadMore(!readMore);
+  };
 
   return (
     <>
@@ -15,23 +18,23 @@ function Steel() {
             Enhance your waterfront lifestyle with our exceptional floating dock
             solutions, proudly serving Vancouver. We are dedicated to crafting
             floating docks that redefine your connection to the water.
-
-              <div className="steel__hidden">
-            Harnessing the lightweight durability of aluminum, our skilled
-            artisans meticulously tailor each floating dock to harmonize with
-            your property's distinctive features. We're not just builders; we're
-            creators of aquatic experiences. Imagine a waterfront that
-            seamlessly blends form and function, that's what we deliver. From
-            the initial concept to the final installation, our team is driven by
-            a passion for precision, ensuring your vision becomes a reality.
-            With safety as our top priority, we engineer stable and stylish
-            platforms that stand the test of time. Our floating docks aren't
-            just structures; they're gateways to unforgettable moments on the
-            water. Discover the transformative power of a floating dock, where
-            Vancouver's stunning landscapes meet innovation and craftsmanship.
-            Elevate your waterfront experience today. Contact us to discuss your
-            project, and let's set sail on a journey of waterfront dreams."
-            </div>
+            <p className="steel__hidden">
+              Harnessing the lightweight durability of aluminum, our skilled
+              artisans meticulously tailor each floating dock to harmonize with
+              your property's distinctive features. We're not just builders;
+              we're creators of aquatic experiences. Imagine a waterfront that
+              seamlessly blends form and function, that's what we deliver. From
+              the initial concept to the final installation, our team is driven
+              by a passion for precision, ensuring your vision becomes a
+              reality. With safety as our top priority, we engineer stable and
+              stylish platforms that stand the test of time. Our floating docks
+              aren't just structures; they're gateways to unforgettable moments
+              on the water. Discover the transformative power of a floating
+              dock, where Vancouver's stunning landscapes meet innovation and
+              craftsmanship. Elevate your waterfront experience today. Contact
+              us to discuss your project, and let's set sail on a journey of
+              waterfront dreams."
+            </p>
           </p>
           <div className="steel__thumbnails">
             <div className="steel__thumbnail">

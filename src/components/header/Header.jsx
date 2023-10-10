@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { useEffect, useState, useRef } from "react";
 import "./Header.scss";
+import logo from "../../images/body/logocopy.jpg";
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -44,7 +45,9 @@ function Header() {
         style={{ opacity: showNav ? 1 : 0, transition: "opacity 0.5s" }}
       >
         <Link className="link" to="/">
-          <div className="nav__JP-logo"></div>
+          {/* <div className="nav__JP-logo"></div> */}
+          <img classname="logo" src={logo} alt="JP Morgan Logo"></img>
+
         </Link>
 
         <div className="hamburger" onClick={handleToggle}>

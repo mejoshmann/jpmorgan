@@ -69,6 +69,7 @@ function Contact() {
             SUBMIT
           </button>
         </form>
+        
       </aside>
     </section>
   );

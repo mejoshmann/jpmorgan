@@ -12,7 +12,7 @@
     background-position: center;
 
     @include tablet {
-      background-size: auto 80%;
+      background-size: auto 100%;
       background-position: top;
       min-height: 25rem;
     }
@@ -20,10 +20,7 @@
     @include desktop {
       height: 60vh;
     width: 100vw;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
+   
     }
   }
 
@@ -38,33 +35,34 @@
   }
 
   &__aside {
-    background-color: $jp-tan;
+    display: flex;
+    flex-direction: column;
+    
 
     @include tablet {
-      display: flex;
-      flex-direction: column;
+     flex-direction: row;
     }
 
     @include desktop {
-      display: flex;
       flex-direction: row;
-      padding: 0 10% 5% 10%;
+      // padding: 0 10% 5% 10%;
     }
   }
 
   &__blurb {
-    padding: 5%;
-    font-size: 1.1rem;
+    padding: 1rem;
+    width: 100%;
+    font-size: 1.2rem;
 
     @include tablet {
-      padding: 5% 5% 2% 5%;
-      font-size: 1.4rem;
+      width: 50%;
+      padding: 1rem 2rem;
+      font-size: 1.2rem;
       line-height: 1.4;
     }
 
     @include desktop {
-      padding: 2% 1% 2% 0;
-      width: 50%;
+      padding: 1rem 3rem;
     }
   }
 }
@@ -74,15 +72,16 @@
   flex-direction: column;
   width: 100%;
   border-radius: 4px;
-  padding: 0 5% 10% 5%;
+  padding: 1rem;
 
   @include tablet {
-    padding: 0 5% 5% 5%;
+    width: 50%;
+    padding: 1rem 2rem;
   }
 
   @include desktop {
     width: 50%;
-    padding: 2% 0 0 1%;
+    padding: 1rem 3rem;
   }
 
   &__name,
