@@ -1,11 +1,7 @@
 import "./Steel.scss";
-import { useState } from "react";
 
 function Steel() {
-  const [readMore, setReadMore] = useState(false);
-  const handleToggle = () => {
-    setReadMore(!readMore);
-  };
+
 
   return (
     <>
