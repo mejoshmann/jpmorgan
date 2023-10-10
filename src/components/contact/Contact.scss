@@ -12,21 +12,20 @@
     background-position: center;
 
     @include tablet {
-      background-size: auto 100%;
+      background-size: 100% 80%;
       background-position: top;
       min-height: 25rem;
     }
 
     @include desktop {
       height: 60vh;
-    width: 100vw;
+      width: 100vw;
    
     }
   }
 
   &__heading {
     font-size: 2rem;
-    // height: 6rem;
     padding: 2rem;
     display: flex;
     justify-content: center;

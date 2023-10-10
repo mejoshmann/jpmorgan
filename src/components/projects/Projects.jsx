@@ -48,13 +48,13 @@ function Projects() {
           {selectCategory === 'Residential'
           ? residentImages.map((image, index) => (
           <div className="container__thumbnail" key={index}>
-            <img className="container__thumbnail--image" src={image} alt={`Residential ${index + 1}`}></img>
+            <img className="container__thumbnail--image" src={image} alt={`Residential ${index + 1} loading="lazy"`}></img>
           </div>
           ))
 
           : commerchImages.map((image, index) => (
               <div className="container__thumbnail" key={index}>
-            <img className="container__thumbnail--image" src={image} alt={`Commercial ${index +1}`}></img>
+            <img className="container__thumbnail--image" src={image} alt={`Commercial ${index +1}`} loading="lazy"></img>
           </div>
           ))}
         </div>
