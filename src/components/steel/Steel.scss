@@ -19,11 +19,10 @@
   }
 
   &__heading {
-    padding: 3.5rem 0 0;
+    padding: 2rem;
     font-size: 2.2rem;
     color: $jp-red;
     text-align: center;
-    width: 100%;
 
     @include desktop {
     }

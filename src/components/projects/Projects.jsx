@@ -6,6 +6,12 @@ import image3 from "../../images/image3/front.jpg";
 import image4 from "../../images/image4/planters.jpg";
 import image5 from "../../images/image5/216.jpg";
 import image6 from "../../images/image6/no-roof.jpg";
+import commer1 from "../../images/commercial/officewerks1.jpg";
+import commer2 from "../../images/commercial/officewerks.jpg";
+import commer3 from "../../images/commercial/2091.jpg";
+import commer4 from "../../images/commercial/2093.jpg";
+import commer5 from "../../images/commercial/2102.jpg";
+import commer6 from "../../images/commercial/2520.jpg";
 
 function Projects() {
 
@@ -16,12 +22,11 @@ function Projects() {
   }
 
   const residentImages = [
-   image1, image2, image3, 
+   image1, image2, image3, image4, image5, image6, 
   ];
 
   const commerchImages = [
-  image4, image5, image6,
-
+    commer1, commer2, commer3, commer4, commer5, commer6, 
   ];
 
 

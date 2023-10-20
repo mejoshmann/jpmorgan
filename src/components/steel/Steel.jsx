@@ -7,7 +7,7 @@ function Steel() {
     <>
       <div className="steel">
         <div className="steel__main-image"></div>
-        <div className="steel__heading">Marine</div>
+        <h2 className="steel__heading">Marine</h2>
 
         <div className="steel__container">
           <p className="steel__blurb">

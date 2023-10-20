@@ -44,10 +44,8 @@ function Header() {
         className="nav"
         style={{ opacity: showNav ? 1 : 0, transition: "opacity 0.5s" }}
       >
-        <Link className="link" to="/">
-          {/* <div className="nav__JP-logo"></div> */}
+        <Link className="logo-link" to="/">
           <img classname="logo" src={logo} alt="JP Morgan Logo"></img>
-
         </Link>
 
         <div className="hamburger" onClick={handleToggle}>
