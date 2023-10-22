@@ -18,7 +18,8 @@ function Footer() {
                 <a href={`https://www.instagram.com/jpmorganconstruction`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="footer__insta"></a>
+                  className="footer__insta"><i>Follow on Instagram</i></a>
+                  
             </div>
             <p className="footer__copyright">
               &#169; JP Morgan Construction inc. 2003
