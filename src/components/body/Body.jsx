@@ -27,7 +27,9 @@ function Body() {
         </Slider>
       </div>
       <div className="body__flyer">
-        <h1 className="heading">Your Building Specialists</h1>
+        <h1 className="body__specialists">Your Building Specialists</h1>
+        <h3 className="body__clowns">"We build one house at a time, and leave the juggling to the clowns!"</h3>
+
       </div>
     </div>
   );

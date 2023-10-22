@@ -15,7 +15,7 @@ function Footer() {
 
           <div className="footer__socials">
             <div className="footer__socials--container">
-              <div className="footer__fb"></div>
+              {/* <div className="footer__fb"></div> */}
                 <a href={`https://www.instagram.com/jpmorganconstruction`}
                   target="_blank"
                   rel="noopener noreferrer"

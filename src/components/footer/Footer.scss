@@ -31,6 +31,7 @@
   flex-direction: column;
   justify-content: space-around;
   color: $jp-red;
+  text-align: left;
   
 
 
@@ -88,8 +89,8 @@ gap: 5%;
 &__insta,
 &__twitter {
 background-image: url(../../icons/facebook.png);
-width: 2rem;
-height: 2rem;
+width: 3.5rem;
+height: 3.5rem;
 background-size: cover;
 margin: 1rem;
 
