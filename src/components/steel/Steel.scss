@@ -7,14 +7,18 @@
 
   &__main-image {
     background-image: url("../../images/marine/slab.jpg");
-    height: 60vh;
+    height: 30vh;
     width: 100vw;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
+    
 
-    @include desktop {
+    @include tablet {
+      height: 55vh;
+      background-attachment: fixed;
+    
     }
   }
 
@@ -36,6 +40,10 @@
   &__blurb {
     font-size: 1.2rem;
     padding: 1rem 2.5rem;
+
+    @include tablet {
+      padding: 1rem 5%;
+    }
   }
 
   &__thumbnails {

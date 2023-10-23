@@ -6,7 +6,7 @@
 
   &__image {
     background-image: url("../../images/plan.jpg");
-    height: 40vh;
+    height: 30vh;
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -14,7 +14,6 @@
 
     @include tablet {
       height: 50vh;
-      background-size: 100% 100%;
 
     }
 

@@ -1,6 +1,23 @@
 $tablet-breakpoint: 768px;
 $desktop-breakpoint: 1279px;
 
+@mixin main-image--small {
+    height: 30vh;
+    width: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@mixin main-image--med {
+    height: 50vh;
+    background-attachment: fixed;
+}
+
+@mixin main-image--lrg {
+    height: 55vh;
+}
+
 
 
 @mixin tablet {
