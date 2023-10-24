@@ -22,6 +22,8 @@ function About() {
                 If you are subdividing, buying a section or knocking down and
                 rebuilding, let us create your dream home from the ground up.
               </p>
+              <h3 className="container__clowns">"We build one house at a time, and leave the juggling to the clowns!"</h3>
+
             </div>
 
             <div className="container__box">
