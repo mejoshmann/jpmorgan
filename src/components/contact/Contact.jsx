@@ -55,7 +55,7 @@ function Contact() {
               type="email"
               className="form__email"
               id="email"
-              name="email_from"
+              name="email"
               placeholder="Enter Your Email *"
               required
             />
@@ -65,12 +65,15 @@ function Contact() {
             <input
               type="text"
               className="form__company"
-              placeholder="Company Name "
+              placeholder="Company Name"
+              name="company"
+              id="company"
             />
           </label>
 
           <label htmlFor="message" className="message">
             <textarea
+              name="message"
               type="text"
               className="form__message"
               id="message"

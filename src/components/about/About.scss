@@ -35,13 +35,15 @@
 
     @include desktop {
       padding: 1rem 5%;
+      height: 100vh;
     }
   }
 
   &__heading {
-    text-align: center;
-    padding: 3rem;
+    padding: 3rem 1rem 1rem;
     font-size: 2rem;
+    color: $jp-red;
+    text-align: center;
   }
 
   &__what {
