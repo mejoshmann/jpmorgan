@@ -1,4 +1,5 @@
 import "./Contact.scss";
+import { Helmet } from "react-helmet";
 import emailjs from "@emailjs/browser";
 
 function Contact() {
@@ -24,18 +25,28 @@ function Contact() {
 
   return (
     <section className="contact">
+       <Helmet>
+        <meta
+          name="description"
+          content="Discover excellence in residential and commercial construction with JP Morgan Construction, your trusted partner in Vancouver, BC. Specializing in new builds, renovations, and commercial carpentry. our skilled team brings artistry and precision to every project. From revitalizing history to innovating for the present, we craft unique experiences that stand the test of time. Contact us today to turn your construction dreams into reality in the heart of Vancouver."
+        />
+        <meta
+          name="keywords"
+          content="Vancouver construction, BC builders, new builds, carpentry, framing, residential framing, residential carpentry, commercial carpentry, commercial framing, renovations, construction services, Vancouver contractors, building contractors, residential construction, commercial construction, Vancouver construction company, construction projects, expert builders, construction management, design-build, construction consulting, Vancouver construction services"
+        />{" "}
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      </Helmet>
       <div className="contact__parallax"></div>
       <h2 className="contact__heading">Contact Us</h2>
 
       <aside className="contact__aside">
         <p className="contact__blurb">
-          Ready to turn your construction dreams into reality? We can't wait to
-          hear from you! Whether you're planning a new project, seeking expert
-          advice, or have any questions about our services, our team is here to
-          help. Fill out the form below and let's start building together. Your
-          vision is our blueprint, and we're excited to bring it to life. Get in
-          touch today, and let's lay the foundation for your next successful
-          project!
+          Are you searching for a reputable construction company in Vancouver,
+          BC, that can bring your construction dreams to life? Look no further!
+          JP Morgan Construction is your premier choice for top-quality
+          construction services in the Vancouver area. With a proven track
+          record of excellence, we specialize in residential and commercial
+          construction, carpentry and framing, offering a wide range of services to meet your needs.
         </p>
 
         <form onSubmit={sendEmail} className="form">

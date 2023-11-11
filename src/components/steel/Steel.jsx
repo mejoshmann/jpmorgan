@@ -1,4 +1,5 @@
 import "./Steel.scss";
+import { Helmet } from "react-helmet";
 
 function Steel() {
 
@@ -6,6 +7,17 @@ function Steel() {
   return (
     <>
       <div className="steel">
+      <Helmet>
+        <meta
+          name="description"
+          content="Discover excellence in residential and commercial construction with JP Morgan Construction, your trusted partner in Vancouver, BC. Specializing in new builds, renovations, and commercial carpentry. our skilled team brings artistry and precision to every project. From revitalizing history to innovating for the present, we craft unique experiences that stand the test of time. Contact us today to turn your construction dreams into reality in the heart of Vancouver."
+        />
+        <meta
+          name="keywords"
+          content="Vancouver construction, BC builders, new builds, carpentry, framing, residential framing, residential carpentry, commercial carpentry, commercial framing, renovations, construction services, Vancouver contractors, building contractors, residential construction, commercial construction, Vancouver construction company, construction projects, expert builders, construction management, design-build, construction consulting, Vancouver construction services"
+        />{" "}
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      </Helmet>
         <div className="steel__main-image"></div>
         <h2 className="steel__heading">Marine</h2>
 

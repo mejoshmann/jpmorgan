@@ -1,5 +1,6 @@
 import "./Projects.scss";
 import { useState } from "react";
+import { Helmet } from "react-helmet";
 import richmond from "../../images/richmond/front-house.jpg";
 import image2 from "../../images/image2/front-house.jpg";
 import kits from "../../images/kits/front.jpg";
@@ -7,10 +8,10 @@ import image4 from "../../images/decks/deck1.jpg";
 import image5 from "../../images/image5/216.jpg";
 import image6 from "../../images/image6/no-roof.jpg";
 import sasamat from "../../images/sasamat/sasamat.jpg";
-import deck from "../../images/decks/deck3.jpg"
+import deck from "../../images/decks/deck3.jpg";
 
 import commer1 from "../../images/commercial/officewerks1.jpg";
-import office  from "../../images/commercial/officewerks.jpg";
+import office from "../../images/commercial/officewerks.jpg";
 import commer2 from "../../images/1616cambie/cambie6.jpg";
 import commer3 from "../../images/commercial/2091.jpg";
 import commer6 from "../../images/commercial/2520.jpg";
@@ -30,22 +31,33 @@ function Projects() {
     { src: image4, caption: "Cadboro Bay" },
     { src: image5, caption: "North Vancouver" },
     { src: image6, caption: "Kitsilano" },
-    { src: sasamat, caption: "Sasamat"},
-    { src: deck, caption: "North Vancouver"}
+    { src: sasamat, caption: "Sasamat" },
+    { src: deck, caption: "North Vancouver" },
   ];
 
   const commerchImages = [
-    { src: office, caption: "Ofiswerks"},
+    { src: office, caption: "Ofiswerks" },
     { src: commer1, caption: "Ofiswerks" },
     { src: commer2, caption: "Cambie" },
-    { src: cambie, caption: "Cambie"},
+    { src: cambie, caption: "Cambie" },
     { src: commer6, caption: "Highlands Firehouse" },
     { src: commer3, caption: "Highlands Firehouse" },
-  
   ];
 
   return (
     <>
+      <Helmet>
+        <meta
+          name="description"
+          content="Discover excellence in residential and commercial construction with JP Morgan Construction, your trusted partner in Vancouver, BC. Specializing in new builds, renovations, and commercial carpentry. our skilled team brings artistry and precision to every project. From revitalizing history to innovating for the present, we craft unique experiences that stand the test of time. Contact us today to turn your construction dreams into reality in the heart of Vancouver."
+        />
+        <meta
+          name="keywords"
+          content="Vancouver construction, BC builders, new builds, carpentry, framing, residential framing, residential carpentry, commercial carpentry, commercial framing, renovations, construction services, Vancouver contractors, building contractors, residential construction, commercial construction, Vancouver construction company, construction projects, expert builders, construction management, design-build, construction consulting, Vancouver construction services"
+        />{" "}
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      </Helmet>
+
       <div className="container">
         <div className="container__mainImage"></div>
         <h2 className="container__heading">PROJECT HIGHLIGHTS</h2>
@@ -82,8 +94,9 @@ function Projects() {
                   <div className="container__bottom">
                     <div className="container__bottom--icon"></div>
                     <p className="container__bottom--place">
-                    {imageData.caption}</p>
-                    </div>
+                      {imageData.caption}
+                    </p>
+                  </div>
                 </div>
               ))
             : commerchImages.map((imageData, index) => (
