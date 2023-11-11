@@ -11,10 +11,17 @@ import ContactPage from "./pages/ContactPage";
 import React from "react";
 
 function App() {
+ 
+
   return (
     <BrowserRouter>
       <div className="App">
+
+      <Helmet>
+      <title>JP Morgan Construction - Expert Construction Services in Vancouver, BC</title>
+      </Helmet>
         <Header />
+        
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/About" element={<AboutPage />} />
