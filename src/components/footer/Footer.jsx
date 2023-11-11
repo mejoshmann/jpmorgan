@@ -19,11 +19,16 @@ function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="footer__insta"><i>Follow on Instagram</i></a>
+                  <a href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="footer__fb"><i>Follow on FaceBook</i></a>
                   
             </div>
             <p className="footer__copyright">
               &#169; JP Morgan Construction inc. 2003
             </p>
+  
           </div>
       </footer>
     </>

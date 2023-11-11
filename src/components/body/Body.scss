@@ -15,6 +15,7 @@ body {
 
   &__heading {
     color: #76323f;
+    color: $jp-tan;
     font-size: 4rem;
     width: 60%;
     margin: 20% 0 0 10%;
@@ -35,6 +36,10 @@ body {
     color: $jp-red;
     font-size: 3rem;
     font-weight: 700;
+  }
+
+  &__hidden {
+    display: none;
   }
 
   &__clowns {
@@ -72,8 +77,10 @@ body {
   width: 100vw;
 }
 
+
+
 .slide1 {
-  background-image: url("../../images/body/body.jpg");
+  background-image: url("../../images/image5/inside-front.jpg");
 }
 
 .slide2 {

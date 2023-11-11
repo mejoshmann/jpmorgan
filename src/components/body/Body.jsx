@@ -28,7 +28,14 @@ function Body() {
       </div>
       <div className="body__flyer">
         <h1 className="body__specialists">Your Building Specialists</h1>
-
+        <p className="body__hidden">
+          Are you searching for a reputable construction company in Vancouver,
+          BC, that can bring your construction dreams to life? Look no further!
+          JP Morgan Construction is your premier choice for top-quality
+          construction services in the Vancouver area. With a proven track
+          record of excellence, we specialize in residential and commercial
+          construction, offering a wide range of services to meet your needs.
+        </p>
       </div>
     </div>
   );
