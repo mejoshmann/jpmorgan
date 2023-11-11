@@ -15,11 +15,11 @@ function Footer() {
 
           <div className="footer__socials">
             <div className="footer__socials--container">
-                <a href={`https://www.instagram.com/jpmorganconstruction`}
+                <a href=
                   target="_blank"
                   rel="noopener noreferrer"
                   className="footer__insta"><i>Follow on Instagram</i></a>
-                  <a href="#"
+                  <a href={`https://www.instagram.com/jpmorganconstruction`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="footer__fb"><i>Follow on FaceBook</i></a>
