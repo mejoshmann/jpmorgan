@@ -6,19 +6,16 @@
 
   &__image {
     background-image: url("../../images/plan.jpg");
-    height: 30vh;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
+    @include main-image--small;
 
     @include tablet {
-      height: 50vh;
+          @include main-image--med;
 
     }
 
     @include desktop {
-      height: 55vh;
+          @include main-image--lrg;
+
     }
   }
 
