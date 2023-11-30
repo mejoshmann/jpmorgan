@@ -7,19 +7,18 @@
 
   &__main-image {
     background-image: url("../../images/marine/slab.jpg");
-    height: 30vh;
-    width: 100vw;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    
+    @include main-image--small;
 
     @include tablet {
-      height: 55vh;
-      background-attachment: fixed;
-    
+          @include main-image--med;
+
     }
+
+    @include desktop {
+          @include main-image--lrg;
+
+    }
+  
   }
 
   &__heading {

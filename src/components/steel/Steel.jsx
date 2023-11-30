@@ -14,7 +14,7 @@ function Steel() {
         />
         <meta
           name="keywords"
-          content="Vancouver construction, BC builders, new builds, carpentry, framing, residential framing, residential carpentry, commercial carpentry, commercial framing, renovations, construction services, Vancouver contractors, building contractors, residential construction, commercial construction, Vancouver construction company, construction projects, expert builders, construction management, design-build, construction consulting, Vancouver construction services"
+          content="Welded aluminum docks, Aluminum gangways, Vancouver waterfront properties, Marine-grade gangways, Aluminum floating docks, Custom aluminum marine structures, Vancouver marina solutions,  Vancouver construction, BC builders, new builds, construction consulting, Vancouver construction services"
         />{" "}
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-4M9TQY4H73"></script>
@@ -37,7 +37,7 @@ function Steel() {
             floating docks that redefine your connection to the water.
             <p className="steel__hidden">
               Harnessing the lightweight durability of aluminum, our skilled
-              artisans meticulously tailor each floating dock to harmonize with
+              welders tailor each floating dock to harmonize with
               your property's distinctive features. We're not just builders;
               we're creators of aquatic experiences. Imagine a waterfront that
               seamlessly blends form and function, that's what we deliver. From

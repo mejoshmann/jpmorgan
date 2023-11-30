@@ -88,8 +88,16 @@
   &__mainImage {
     background-image: url("../../images/frames.jpg");
     @include main-image--small;
-    @include main-image--med;
-    @include main-image--lrg;
+
+    @include tablet {
+          @include main-image--med;
+
+    }
+
+    @include desktop {
+          @include main-image--lrg;
+
+    }
   }
 
   &__thumbnails {
