@@ -51,11 +51,11 @@ function App() {
         </Helmet>
         <Header />
         <Routes>
-          // <Route path="/" element={<Home />} />
-          // <Route path="/About" element={<About />} />
-          // <Route path="/Projects" element={<Projects />} />
-          // <Route path="/Marine" element={<Marine />} />
-          // <Route path="/Contact" element={<ContactPage />} />
+           <Route path="/" element={<Home />} />
+            <Route path="/About" element={<About />} />
+           <Route path="/Projects" element={<Projects />} />
+           <Route path="/Marine" element={<Marine />} />
+           <Route path="/Contact" element={<ContactPage />} />
         </Routes>
         <Footer />
       </div>
