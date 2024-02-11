@@ -17,6 +17,7 @@ function Footer() {
         />{" "}
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </Helmet>
+
           <div className="footer__details">
             <h3 className="footer__details--heading">
               JP Morgan Construction Inc

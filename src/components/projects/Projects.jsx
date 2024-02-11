@@ -16,6 +16,8 @@ import commer2 from "../../images/1616cambie/cambie6.jpg";
 import commer3 from "../../images/commercial/2091.jpg";
 import commer6 from "../../images/commercial/2520.jpg";
 import cambie from "../../images/1616cambie/cambie4.jpg";
+import seymour from "../../images/commercial/seymour10.webp";
+import ofiswerks from "../../images/commercial/ofiswerks3.webp";
 
 function Projects() {
   const [selectCategory, setSelectCategory] = useState("Residential");
@@ -26,8 +28,8 @@ function Projects() {
 
   const residentImages = [
     { src: richmond, caption: "Richmond" },
-    { src: image2, caption: "North Vancouver" },
     { src: kits, caption: "Kitsilano" },
+    { src: image2, caption: "North Vancouver" },
     { src: image4, caption: "Cadboro Bay" },
     { src: image5, caption: "North Vancouver" },
     { src: image6, caption: "Kitsilano" },
@@ -36,10 +38,12 @@ function Projects() {
   ];
 
   const commerchImages = [
-    { src: office, caption: "Ofiswerks" },
-    { src: commer1, caption: "Ofiswerks" },
-    { src: commer2, caption: "Cambie" },
-    { src: cambie, caption: "Cambie" },
+    { src: seymour, caption: "Mt Seymour Lift Huts" },
+    { src: ofiswerks, caption: "Ofiswerks, Olympic Village"},
+    { src: office, caption: "Ofiswerks, Olympic Village" },
+    { src: commer1, caption: "Ofiswerks, Olympic Village" },
+    { src: commer2, caption: "Cambie St" },
+    { src: cambie, caption: "Cambie St" },
     { src: commer6, caption: "Highlands Firehouse" },
     { src: commer3, caption: "Highlands Firehouse" },
   ];
@@ -56,16 +60,18 @@ function Projects() {
           content="Vancouver construction, BC builders, new builds, carpentry, framing, residential framing, residential carpentry, commercial carpentry, commercial framing, renovations, construction services, Vancouver contractors, building contractors, residential construction, commercial construction, Vancouver construction company, construction projects, expert builders, construction management, design-build, construction consulting, Vancouver construction services"
         />{" "}
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-4M9TQY4H73"></script>
-          <script>
-            {`
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-4M9TQY4H73"
+        ></script>
+        <script>
+          {`
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
               gtag('config', 'G-4M9TQY4H73');
               `}
-          </script>
+        </script>
       </Helmet>
 
       <div className="container">

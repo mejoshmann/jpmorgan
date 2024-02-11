@@ -1,0 +1,42 @@
+@use "../../Styles/Partials/mixins" as *;
+
+.projects {
+    @include desktop {
+        border: 1px solid red;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    &__image {
+        background-image: url("../../images/body/body.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        @include desktop {
+        width: 50rem;
+        height: 35rem;
+        z-index: 100;
+        position: absolute;
+       
+        }
+    }
+
+    &__container {
+
+        @include desktop {
+        background-color: #a9a9a9;
+        z-index: 0;
+        height: 40rem;
+        width: 55%;
+        position: relative;
+        left: 45%;
+        }
+    }
+
+    &__innerCont {
+        @include desktop {
+            margin: 5% 0 0 16%;
+            border: 1px solid red;
+        }
+    }
+}

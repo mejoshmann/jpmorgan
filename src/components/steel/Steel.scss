@@ -40,8 +40,13 @@
     font-size: 1.2rem;
     padding: 1rem 2.5rem;
 
+
     @include tablet {
-      padding: 1rem 5%;
+      width: 80%;
+      text-align: justify;
+      margin: auto;
+      font-size: 1.3rem;
+      line-height: 1.3;
     }
   }
 

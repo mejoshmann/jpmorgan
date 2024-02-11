@@ -1,10 +1,9 @@
-import About from "../components/about/About";
+import Body from "../components/body/Body";
 
 function AboutPage() {
     return(
         <>
-        
-        <About />
+        <Body/>
         </>
     )
 }
