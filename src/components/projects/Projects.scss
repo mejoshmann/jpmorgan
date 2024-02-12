@@ -157,7 +157,11 @@
   }
 
   &__bottom--place {
+    font-size: 1.2rem;
+
+    @include desktop {
     font-size: 2rem;
+    }
   }
 
 

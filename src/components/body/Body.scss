@@ -39,11 +39,15 @@ body {
   }
 
   &__hidden {
+    text-align: justify;
+    color: $jp-red;
+    width: 80%;
+
+    @include desktop {
     font-size: 1.5rem;
     width: 60%;
-    text-align: justify;
     line-height: 1.4;
-    color: $jp-red;
+    }
   }
 
   &__clowns {
