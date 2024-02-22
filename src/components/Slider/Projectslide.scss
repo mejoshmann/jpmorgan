@@ -1,0 +1,147 @@
+@use "../../Styles/Partials/mixins" as *;
+@use "../../Styles/Partials/colors" as *;
+
+.highlights {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  @include desktop {
+    padding: 1rem 2rem;
+  }
+
+  &__heading {
+    padding:  1.2rem;
+    font-size: 1.5rem;
+    color: $jp-red;
+    text-align: center;
+
+    @include desktop {
+      font-size: 2.5rem;
+      padding: 2rem 0;
+    }
+  }
+
+  &__images {
+    display: flex;
+    flex-direction: column;
+
+    // @include tablet {
+    //   flex-direction: row;
+    //   flex-wrap: wrap;
+    //   justify-content: center;
+    //   gap: 2rem;
+    //   border: 1px solid green;
+    // }
+
+    @include desktop {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 4rem;
+    }
+
+    &--container {
+      padding-bottom: 3rem;
+      padding: 0 1rem;
+      // width: 50%;
+      // height: auto;
+      @include desktop {
+
+      }
+    }
+  }
+
+  &__image {
+    width: 100vw;
+    height: 20rem;
+    object-fit: cover;
+    justify-content: center;
+
+  
+
+    @include desktop {
+      width: 35rem;
+      height: 28rem;
+     
+    }
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  &__project--image {
+
+  
+
+    @include desktop {
+      padding-bottom: 1rem;
+    }
+  }
+
+  &__project--copy {
+    padding: 0.1rem 0 1.5rem;
+    color: $jp-red;
+    font-weight: 100;
+    font-size: 1.2rem;
+
+    @include desktop {
+      font-weight: 200;
+
+    }
+  }
+
+  &__residential {
+    @include desktop {
+    }
+  }
+
+  &__commercial {
+    @include desktop {
+      text-align: right;
+    }
+  }
+
+  .slick-prev,
+  .slick-next {
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 100;
+    cursor: pointer;
+  }
+
+  .slick-prev {
+    left: 10px; 
+  }
+
+  .slick-next {
+    right: 10px; 
+  }
+
+  .slick-prev i,
+  .slick-next i {
+    font-size: 3rem; 
+    color: #000;
+  }
+
+  .slick-prev:hover,
+  .slick-next:hover {
+    color: #000;
+  }
+
+  .slick-list {
+    cursor: pointer;
+
+    @include desktop {
+      width: 35rem;
+      height: 28rem;
+    }
+  }
+}

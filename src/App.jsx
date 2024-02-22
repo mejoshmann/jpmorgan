@@ -9,6 +9,7 @@ import Marine from "./pages/Marine";
 import Projects from "./components/projects/Projects";
 import ContactPage from "./pages/ContactPage";
 import React from "react";
+import Slider from "./components/Slider/Projectslide";
 // import Spa from "./pages/Spa";
 // import Wedo from "./components/wedo/Wedo";
 // import Weabout from "./components/wedo/Weabout";
@@ -53,7 +54,7 @@ function App() {
         <Routes>
            <Route path="/" element={<Home />} />
             <Route path="/About" element={<About />} />
-           <Route path="/Projects" element={<Projects />} />
+           <Route path="/Projects" element={<Slider />} />
            <Route path="/Marine" element={<Marine />} />
            <Route path="/Contact" element={<ContactPage />} />
         </Routes>

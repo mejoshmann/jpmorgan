@@ -27,6 +27,13 @@ function Projects() {
   };
 
   const residentImages = [
+    {
+      images: [
+        { src: richmond, caption: "Richmond" },
+        { src: kits, caption: "Kitsilano" },
+        { src: image2, caption: "North Vancouver" },
+      ],
+    },
     { src: richmond, caption: "Richmond" },
     { src: kits, caption: "Kitsilano" },
     { src: image2, caption: "North Vancouver" },
@@ -39,7 +46,7 @@ function Projects() {
 
   const commerchImages = [
     { src: seymour, caption: "Mt Seymour Lift Huts" },
-    { src: ofiswerks, caption: "Ofiswerks, Olympic Village"},
+    { src: ofiswerks, caption: "Ofiswerks, Olympic Village" },
     { src: office, caption: "Ofiswerks, Olympic Village" },
     { src: commer1, caption: "Ofiswerks, Olympic Village" },
     { src: commer2, caption: "Cambie St" },
