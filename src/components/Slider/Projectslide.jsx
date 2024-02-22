@@ -10,7 +10,6 @@ import oficefront from "../../images/commercial/oficefront.webp";
 import oficeinside from "../../images/commercial/oficeinside.webp";
 import oficeover from "../../images/commercial/ofiswerks3.webp";
 
-import church from "../../images/church/church.webp";
 import church1 from "../../images/church/church3.webp";
 import church2 from "../../images/church/church4.webp";
 import church3 from "../../images/church/church1.webp";
@@ -27,7 +26,6 @@ import rich2 from "../../images/richmond/formwork.webp";
 import wall from "../../images/wall/wall.webp";
 import wall1 from "../../images/wall/wall1.webp";
 import wall2 from "../../images/wall/wall2.webp";
-import wall3 from "../../images/wall/wall3.webp";
 
 
 
