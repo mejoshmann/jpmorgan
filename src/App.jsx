@@ -6,7 +6,6 @@ import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
 import About from "./components/about/About";
 import Marine from "./pages/Marine";
-import Projects from "./components/projects/Projects";
 import ContactPage from "./pages/ContactPage";
 import React from "react";
 import Slider from "./components/Slider/Projectslide";
