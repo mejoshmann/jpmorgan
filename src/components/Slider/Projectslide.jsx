@@ -5,27 +5,40 @@ import { Helmet } from "react-helmet";
 import seymour1 from "../../images/commercial/seymour10.webp";
 import seymour2 from "../../images/commercial/seymour9.webp";
 import seymour3 from "../../images/commercial/seymour2.webp";
+import seymour4 from "../../images/commercial/seymourfinished.webp";
+import seymour11 from "../../images/commercial/seymour11.webp";
+import seymour12 from "../../images/commercial/seymour12.webp";
 
 import oficefront from "../../images/commercial/oficefront.webp";
 import oficeinside from "../../images/commercial/oficeinside.webp";
 import oficeover from "../../images/commercial/ofiswerks3.webp";
+import oficeside from "../../images/commercial/officewerks.webp";
+import oficeopen from "../../images/commercial/officewerks1.webp";
 
 import church1 from "../../images/church/church3.webp";
 import church2 from "../../images/church/church4.webp";
 import church3 from "../../images/church/church1.webp";
 import church5 from "../../images/church/church5.webp";
+import church6 from "../../images/church/church6.webp";
+import church7 from "../../images/church/church7.webp";
+
 
 import kits from "../../images/kits/kits.webp";
 import kits1 from "../../images/kits/front.webp";
 import kits2 from "../../images/kits/kitsside.webp";
+import finished from "../../images/kits/finished.jpg";
+import back from "../../images/kits/kitsback.jpg";
 
 import rich from "../../images/richmond/front-rich1.webp";
+import richform from "../../images/richmond/richfoundation.webp";
 import rich1 from "../../images/richmond/no-roof.webp";
 import rich2 from "../../images/richmond/formwork.webp";
+import richback from "../../images/richmond/richback.webp";
 
 import wall from "../../images/wall/wall.webp";
 import wall1 from "../../images/wall/wall1.webp";
 import wall2 from "../../images/wall/wall2.webp";
+import wall3 from "../../images/wall/wall3.webp";
 
 
 
@@ -101,8 +114,16 @@ function Projectslide() {
               <img className="highlights__image" src={rich} alt="hut" />
               </div>
               <div className="highlights__project--image">
+              {" "}
+              <img className="highlights__image" src={richback} alt="hut" />
+              </div>
+              <div className="highlights__project--image">
                 {" "}
                 <img className="highlights__image" src={rich1} alt="hut" />
+              </div>
+              <div className="highlights__project--image">
+              {" "}
+              <img className="highlights__image" src={richform} alt="hut" />
               </div>
               <div className="highlights__project--image">
                 {" "}
@@ -116,6 +137,14 @@ function Projectslide() {
             <Slider {...settings}>
             <div className="highlights__project--image">
               {" "}
+                <img className="highlights__image" src={finished} alt="hut" />
+              </div>
+              <div className="highlights__project--image">
+                {" "}
+                <img className="highlights__image" src={back} alt="hut" />
+              </div>
+              <div className="highlights__project--image">
+                {" "}
                 <img className="highlights__image" src={kits1} alt="hut" />
               </div>
               <div className="highlights__project--image">
@@ -140,6 +169,10 @@ function Projectslide() {
               <div className="highlights__project--image">
                 {" "}
                 <img className="highlights__image" src={wall1} alt="hut" />
+              </div>
+              <div className="highlights__project--image">
+              {" "}
+                <img className="highlights__image" src={wall3} alt="hut" />
               </div>
               <div className="highlights__project--image">
                 {" "}
@@ -169,12 +202,32 @@ function Projectslide() {
                 {" "}
                 <img className="highlights__image" src={oficeover} alt="hut" />
               </div>
+              <div className="highlights__project--image">
+                {" "}
+                <img className="highlights__image" src={oficeside} alt="hut" />
+              </div>
+              <div className="highlights__project--image">
+                {" "}
+                <img className="highlights__image" src={oficeopen} alt="hut" />
+              </div>
             </Slider>
             <h2 className="highlights__project--copy">Ofiswerks Olympic Village</h2>
             </div>
 
             <div className="highlights__images--container">
             <Slider {...settings}>
+            <div className="highlights__project--image">
+              {" "}
+                <img className="highlights__image" src={seymour4} alt="hut" />
+              </div>
+              <div className="highlights__project--image">
+              {" "}
+                <img className="highlights__image" src={seymour11} alt="hut" />
+              </div>
+              <div className="highlights__project--image">
+              {" "}
+                <img className="highlights__image" src={seymour12} alt="hut" />
+              </div>
               <div className="highlights__project--image">
               {" "}
                 <img className="highlights__image" src={seymour1} alt="hut" />
@@ -209,6 +262,15 @@ function Projectslide() {
                 {" "}
                 <img className="highlights__image" src={church3} alt="hut" />
               </div>
+              <div className="highlights__project--image">
+                {" "}
+                <img className="highlights__image" src={church7} alt="hut" />
+              </div>
+              <div className="highlights__project--image">
+                {" "}
+                <img className="highlights__image" src={church6} alt="hut" />
+              </div>
+              
               
             </Slider>
             <h2 className="highlights__project--copy">First Baptist Church, Nelson st</h2>

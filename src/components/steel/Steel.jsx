@@ -38,17 +38,18 @@ function Steel() {
           <p className="steel__blurb">
             Enhance your waterfront lifestyle with our exceptional floating dock
             solutions, proudly serving Vancouver. We are dedicated to crafting
-            floating docks that redefine your connection to the water.
+            companion ways and floating docks that redefine your connection to
+            the water.
             <p className="steel__hidden">
-              Crafted from lightweight yet durable aluminum, our skilled
-              welders build a floating dock system to complement your
-              property's distinctive features. Imagine a waterfront that
-              seamlessly blends form and function, that's what we deliver. From
-              the initial concept to the final installation, our team is driven
-              by a passion for precision, ensuring your vision becomes a
-              reality. With safety as our top priority, we engineer stable and
-              stylish platforms that stand the test of time. Elevate your
-              waterfront experience today. Contact us to discuss your project.
+              Crafted from lightweight yet durable aluminum, our skilled welders
+              build a floating dock system to complement your property's
+              distinctive features. Imagine a waterfront that seamlessly blends
+              form and function, that's what we deliver. From the initial
+              concept to the final installation, our team is driven by a passion
+              for precision, ensuring your vision becomes a reality. With safety
+              as our top priority, we engineer stable and stylish platforms that
+              stand the test of time. Elevate your waterfront experience today.
+              Contact us to discuss your project.
             </p>
           </p>
           <div className="steel__thumbnails">

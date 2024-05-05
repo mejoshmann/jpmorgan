@@ -41,7 +41,6 @@ function Body() {
       <div className="body__container">
         <Slider {...settings}>
           <div className="slide slide1">
-            {/* <h2 className="body__heading">Building the future</h2> */}
             <h2 className="body__heading">Your Building Specialists</h2>
           </div>
           <div className="slide slide2"></div>
