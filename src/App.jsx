@@ -1,15 +1,14 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import "./App.scss";
-import Home from "./pages/Home";
+import Home from "./components/body/Body";
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
 import About from "./components/about/About";
-import Marine from "./pages/Marine";
-import ContactPage from "./pages/ContactPage";
+import Marine from "./components/marine/Marine";
+import Contact from "./components/contact/Contact";
 import React from "react";
 import Slider from "./components/Slider/Projectslide";
-
 
 function App() {
   return (
@@ -47,11 +46,11 @@ function App() {
         </Helmet>
         <Header />
         <Routes>
-           <Route path="/" element={<Home />} />
-            <Route path="/About" element={<About />} />
-           <Route path="/Projects" element={<Slider />} />
-           <Route path="/Marine" element={<Marine />} />
-           <Route path="/Contact" element={<ContactPage />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/projects" element={<Slider />} />
+          <Route path="/marine" element={<Marine />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
         <Footer />
       </div>

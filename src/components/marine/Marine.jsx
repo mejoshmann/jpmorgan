@@ -1,7 +1,7 @@
-import "./Steel.scss";
+import "./Marine.scss";
 import { Helmet } from "react-helmet";
 
-function Steel() {
+function Marine() {
   return (
     <>
       <div className="steel">
@@ -82,4 +82,4 @@ function Steel() {
   );
 }
 
-export default Steel;
+export default Marine;

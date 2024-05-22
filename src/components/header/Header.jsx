@@ -54,22 +54,22 @@ function Header() {
 
         <ul className={`list ${isOpen ? "open" : ""} `}>
           <li className="list__item">
-              <Link className="link" to="/About">
+              <Link className="link" to="/about">
                 About
               </Link>
           </li>
           <li className="list__item">
-            <Link className="link" to="/Projects">
+            <Link className="link" to="/projects">
               Projects
             </Link>
           </li>
           <li className="list__item">
-            <Link className="link" to="/Marine">
+            <Link className="link" to="/marine">
               Marine
             </Link>
           </li>
           <li className="list__item">
-            <Link className="link" to="/Contact">
+            <Link className="link" to="/contact">
               Contact
             </Link>
           </li>
