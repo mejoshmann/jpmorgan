@@ -26,8 +26,8 @@ import church7 from "../../images/church/church7.webp";
 import kits from "../../images/kits/kits.webp";
 import kits1 from "../../images/kits/front.webp";
 import kits2 from "../../images/kits/kitsside.webp";
-import finished from "../../images/kits/finished.jpg";
-import back from "../../images/kits/kitsback.jpg";
+import finished from "../../images/kits/finished.webp";
+import back from "../../images/kits/kitsback.webp";
 
 import rich from "../../images/richmond/front-rich1.webp";
 import richform from "../../images/richmond/richfoundation.webp";

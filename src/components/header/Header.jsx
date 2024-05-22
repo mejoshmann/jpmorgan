@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { useEffect, useState, useRef } from "react";
 import "./Header.scss";
-import logo from "../../images/body/logocopy.jpg";
+import logo from "../../images/body/logo.webp";
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);

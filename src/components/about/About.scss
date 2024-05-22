@@ -5,7 +5,7 @@
   background-color: #fff;
 
   &__image {
-    background-image: url("../../images/plan.jpg");
+    background-image: url("../../images/body/plan.webp");
     @include main-image--small;
 
     @include tablet {
